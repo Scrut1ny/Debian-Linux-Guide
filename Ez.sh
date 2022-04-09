@@ -30,3 +30,4 @@ echo
 echo Type sudo apt install package
 echo
 
+sudo apt install ntpdate && apt ntpdate in.pool.ntp.org && apt dpkg-reconfigure tzdata
