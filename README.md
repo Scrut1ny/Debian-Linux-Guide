@@ -21,7 +21,7 @@ Run as root:
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
 
-#### How to Null out outputs
+#### How to null out outputs
 ```
 command &>/dev/null
 ```
