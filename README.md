@@ -16,4 +16,7 @@ sudo apt install ffmpeg && curl -L https://github.com/yt-dlp/yt-dlp/releases/lat
 #### VLC
 ```
 sudo apt install vlc
+
+Run as root:
+sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
