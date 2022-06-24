@@ -20,3 +20,8 @@ sudo apt install vlc
 Run as root:
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
+
+#### How to Null out outputs
+```
+command &>/dev/null
+```
