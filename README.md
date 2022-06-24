@@ -7,3 +7,8 @@ sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && a
 ```
 sudo apt install ntpdate && apt ntpdate in.pool.ntp.org && apt dpkg-reconfigure tzdata
 ```
+
+#### YT-DLP + FFMPEG
+```
+sudo apt install ffmpeg && curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
+```
