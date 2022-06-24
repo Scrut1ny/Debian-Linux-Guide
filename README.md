@@ -34,3 +34,13 @@ sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
 command &>/dev/null
 ```
+
+#### Vim commands
+````
+Esc – switch to command mode
+:w – write out changes that were made
+:q – exit Vim
+:q! – exit Vim and discard any changes
+:wq – saves the changes, and exits Vim
+:x – save the changes made, and exits Vim
+````
