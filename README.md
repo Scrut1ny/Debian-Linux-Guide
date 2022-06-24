@@ -10,6 +10,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ~/.zshrc
 
 ZSH_THEME="agnoster"
+
+restart
 ```
 
 #### Fixing Time / Timezone
