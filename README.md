@@ -6,6 +6,10 @@ sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && a
 #### ohmyzsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+~/.zshrc
+
+ZSH_THEME="agnoster"
 ```
 
 #### Fixing Time / Timezone
