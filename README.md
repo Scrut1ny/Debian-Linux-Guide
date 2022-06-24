@@ -5,7 +5,7 @@ sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && a
 
 #### Fixing Time / Zone
 ```
-sudo apt install ntpdate && apt ntpdate in.pool.ntp.org && apt dpkg-reconfigure tzdata
+sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
 ```
 
 #### YT-DLP + FFMPEG
