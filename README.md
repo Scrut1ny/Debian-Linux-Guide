@@ -37,6 +37,11 @@ sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 command &>/dev/null
 ```
 
+#### Clear all terminal history & reset
+````
+cat /dev/null > ~/.bash_history && history -c && reset
+````
+
 #### Vim commands
 ````
 Esc – switch to command mode
