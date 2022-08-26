@@ -46,7 +46,6 @@ sudo kal -s GSM850 -g 45 && grgsm_livemon -f 889.0M -g 45
 cd IMSI-catcher && sudo python simple_IMSI-catcher.py -s
 ```
 
-```
 #### VLC
 ```
 sudo apt install vlc
