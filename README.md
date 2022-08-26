@@ -47,12 +47,6 @@ cd IMSI-catcher && sudo python simple_IMSI-catcher.py -s
 ```
 
 ```
-
-```
-
-```
-
-```
 #### VLC
 ```
 sudo apt install vlc
