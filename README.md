@@ -96,7 +96,7 @@ https://www.howtogeek.com/423866/how-to-install-and-use-the-tor-browser-on-linux
 ```
 
 #### Install Tor Service + How to use
-````
+```
 sudo systemctl status tor.service
 sudo systemctl start tor.service
 sudo systemctl stop tor.service
@@ -123,7 +123,6 @@ ifconfig wlan0 up
 #### Install Alfa card drivers:
 ```
 sudo apt install dkms && sudo apt install realtek-rtl88xxau-dkms && sudo reboot now
-
 sudo git clone https://github.com/aircrack-ng/rtl8812au && cd rtl8812au/ && make && sudo make install && sudo rm -rf rtl8812au
 ```
 
