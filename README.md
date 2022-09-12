@@ -60,18 +60,19 @@ command &>/dev/null
 ```
 
 #### Clear all terminal history & reset
-````
+```
 cat /dev/null > ~/.bash_history && history -c && reset
-````
+```
 
 #### Vim commands
-````
+```
 Esc – switch to command mode
 :w – write out changes that were made
 :q – exit Vim
 :q! – exit Vim and discard any changes
 :wq – saves the changes, and exits Vim
 :x – save the changes made, and exits Vim
+```
 
 #### Full update, upgrade, dist-upgrade, autoremove, & clean:
 ```
