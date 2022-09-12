@@ -28,8 +28,7 @@ sudo apt install ffmpeg && curl -L https://github.com/yt-dlp/yt-dlp/releases/lat
 ```
 # https://www.hackers-arise.com/post/software-defined-radio-part-6-building-a-imsi-catcher-stingray
 
-sudo apt-get install -y cmake autoconf libtool pkg-config build-essential python-docutils libcppunit-dev swig doxygen liblog4cpp5-dev gnuradio-dev 
-gr-osmosdr libosmocore-dev liborc-0.4-dev swig
+sudo apt-get install -y cmake autoconf libtool pkg-config build-essential python-docutils libcppunit-dev swig doxygen liblog4cpp5-dev gnuradio-dev gr-osmosdr libosmocore-dev liborc-0.4-dev swig
 
 sudo git clone https://git.osmocom.org/gr-gsm 
 
