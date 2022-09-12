@@ -87,6 +87,8 @@ https://www.howtogeek.com/423866/how-to-install-and-use-the-tor-browser-on-linux
 
 #### Install Tor Service + How to use
 ```
+sudo apt install tor
+
 sudo systemctl status tor.service
 sudo systemctl start tor.service
 sudo systemctl stop tor.service
