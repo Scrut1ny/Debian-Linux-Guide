@@ -1,6 +1,11 @@
-#### Updating
+#### Full update, upgrade, dist-upgrade, autoremove, & clean
 ```
 sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && apt clean -y
+```
+
+#### Fixing Time / Timezone
+```
+sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
 ```
 
 #### ohmyzsh
@@ -12,11 +17,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ZSH_THEME="agnoster"
 
 restart
-```
-
-#### Fixing Time / Timezone
-```
-sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
 ```
 
 #### yt-dlp + FFmpeg
@@ -72,16 +72,6 @@ Esc – switch to command mode
 :q! – exit Vim and discard any changes
 :wq – saves the changes, and exits Vim
 :x – save the changes made, and exits Vim
-```
-
-#### Full update, upgrade, dist-upgrade, autoremove, & clean:
-```
-sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && apt autoremove -y && apt clean -y
-```
-
-#### Fixing tzdata
-```
-sudo apt install ntpdate && apt ntpdate in.pool.ntp.org && apt dpkg-reconfigure tzdata
 ```
 
 #### Install LibreWolf
