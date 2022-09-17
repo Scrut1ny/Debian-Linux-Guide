@@ -143,3 +143,10 @@ git clone https://github.com/threat9/routersploit
 git clone https://github.com/HiroshiManRise/anonym8
 git clone https://github.com/m4ll0k/Infoga
 ```
+
+#### Advanced Linux Resources (Hardening)
+```
+[1](https://madaidans-insecurities.github.io/guides/linux-hardening.html)
+[2](https://eldritchdata.neocities.org)
+[3](https://vez.mrsk.me/linux-hardening.html)
+```
