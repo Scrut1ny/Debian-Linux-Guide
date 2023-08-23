@@ -8,7 +8,7 @@ sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && a
 sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
 ```
 
-### Install Librewolf
+#### Install Librewolf
 ```
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
 
