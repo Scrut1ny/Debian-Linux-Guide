@@ -95,6 +95,46 @@ Esc – switch to command mode
 :x – save the changes made, and exits Vim
 ```
 
+#### Installing Waydroid
+```
+# if you're on debian run this
+export distro=bullseye
+
+# or if you're on ubuntu run this
+export distro=focal
+
+
+sudo curl https://repo.waydro.id/waydroid.gpg --output /usr/share/keyrings/waydroid.gpg
+echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ ${distro} main" | \
+  sudo tee /etc/apt/sources.list.d/waydroid.list
+
+sudo apt update
+sudo apt install -y \
+  build-essential cdbs devscripts equivs fakeroot \
+  git git-buildpackage git-lfs \
+  libgbinder-dev
+
+sudo wget https://raw.githubusercontent.com/MrCyjaneK/waydroid-build/main/build_changelog \
+  -O /usr/bin/build_changelog
+sudo chmod +x ${_}
+
+mkdir ~/build-packages
+cd ${_}
+git clone https://github.com/waydroid/gbinder-python
+cd gbinder-python
+build_changelog
+sudo mk-build-deps -ir -t "apt -o Debug::pkgProblemResolver=yes -y --no-install-recommends"
+sudo debuild -b -uc -us
+sudo apt install -f -y ../*.deb
+
+sudo apt remove libgbinder-dev gbinder-python-build-deps git-lfs fakeroot equivs devscripts cdbs
+# you can remove git and build-essential packages too
+sudo apt autoremove
+sudo rm /usr/bin/build_changelog
+
+sudo apt install waydroid -y
+```
+
 #### Install LibreWolf
 ```
 https://download.opensuse.org/repositories/home:/bgstack15:/aftermozilla/Debian_Unstable/amd64/
