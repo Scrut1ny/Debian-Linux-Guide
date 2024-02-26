@@ -135,12 +135,6 @@ sudo rm /usr/bin/build_changelog
 sudo apt install waydroid -y
 ```
 
-#### Install LibreWolf
-```
-https://download.opensuse.org/repositories/home:/bgstack15:/aftermozilla/Debian_Unstable/amd64/
-sudo dpkg -i librewolf_103.0-1_amd64.deb
-```
-
 #### Installing Tor Browser
 ```
 https://www.howtogeek.com/423866/how-to-install-and-use-the-tor-browser-on-linux/
