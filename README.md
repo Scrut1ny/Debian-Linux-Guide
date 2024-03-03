@@ -1,3 +1,8 @@
+#### ALFA AWUS036ACH Fix
+```
+sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms 
+```
+
 #### Full update, upgrade, dist-upgrade, autoremove, & clean
 ```
 sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && apt clean -y
