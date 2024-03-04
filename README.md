@@ -1,3 +1,18 @@
+### Wordpress + XAMPP
+```
+# Download & Unzip Wordpress
+# https://wordpress.org/download/
+cd $HOME/Downloads && wget https://wordpress.org/latest.tar.gz && tar -xzvf latest.tar.gz
+
+# Download & Install XAMPP
+# https://www.apachefriends.org/download.html
+# https://www.apachefriends.org/faq_linux.html
+chmod 755 xampp-linux-*-installer.run
+sudo ./xampp-linux-*-installer.run
+
+http://127.0.0.1/phpmyadmin/
+```
+
 #### ALFA AWUS036ACH Fix
 ```
 sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms 
