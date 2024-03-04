@@ -11,6 +11,7 @@ chmod 755 xampp-linux-*-installer.run
 sudo ./xampp-linux-*-installer.run
 
 http://127.0.0.1/phpmyadmin/
+http://127.0.0.1/{wordpress folder name}
 ```
 
 #### ALFA AWUS036ACH Fix
