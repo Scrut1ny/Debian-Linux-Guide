@@ -2,7 +2,8 @@
 ```
 # Download & Unzip Wordpress
 # https://wordpress.org/download/
-cd $HOME/Downloads && wget https://wordpress.org/latest.tar.gz && tar -xzvf latest.tar.gz
+cd "$HOME/Downloads" && wget https://wordpress.org/latest.tar.gz && tar -xzvf "latest.tar.gz"
+sudo mv "$HOME/Downloads/wordpress" "/opt/lampp/htdocs"
 
 # Download & Install XAMPP
 # https://www.apachefriends.org/download.html
