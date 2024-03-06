@@ -17,7 +17,7 @@ http://127.0.0.1/{wordpress folder name}
 
 #### ALFA AWUS036ACH Fix
 ```
-sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms 
+sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms
 ```
 
 #### Full update, upgrade, dist-upgrade, autoremove, & clean
