@@ -1,4 +1,15 @@
-### Wordpress + XAMPP
+## YT-DLP (fix) - Linux Mint (Debian)
+```
+sudo apt remove yt-dlp
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod +x yt-dlp
+```
+
+## FFmpeg
+```
+sudo apt install ffmpeg
+```
+
+## Wordpress + XAMPP
 ```
 # Download & Unzip Wordpress
 # https://wordpress.org/download/
@@ -15,22 +26,22 @@ http://127.0.0.1/phpmyadmin/
 http://127.0.0.1/{wordpress folder name}
 ```
 
-#### ALFA AWUS036ACH Fix
+## ALFA AWUS036ACH Fix
 ```
 sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms
 ```
 
-#### Full update, upgrade, dist-upgrade, autoremove, & clean
+## Full update, upgrade, dist-upgrade, autoremove, & clean
 ```
 sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && apt clean -y
 ```
 
-#### Fixing Time / Timezone
+## Fixing Time / Timezone
 ```
 sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
 ```
 
-#### Install Librewolf (Debian Based)
+## Install Librewolf (Debian Based)
 ```
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
 
@@ -52,7 +63,7 @@ sudo apt update
 sudo apt install librewolf -y
 ```
 
-#### ohmyzsh
+## ohmyzsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -63,12 +74,7 @@ ZSH_THEME="agnoster"
 restart
 ```
 
-#### yt-dlp + FFmpeg
-```
-sudo apt install ffmpeg && curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp && yt-dlp -U
-```
-
-### Software Defined Radio, Part 6: Building a Cellphone IMSI Catcher (Stingray)
+## Software Defined Radio, Part 6: Building a Cellphone IMSI Catcher (Stingray)
 ```
 # https://www.hackers-arise.com/post/software-defined-radio-part-6-building-a-imsi-catcher-stingray
 
@@ -89,7 +95,7 @@ sudo kal -s GSM850 -g 45 && grgsm_livemon -f 889.0M -g 45
 cd IMSI-catcher && sudo python simple_IMSI-catcher.py -s
 ```
 
-#### VLC
+## VLC
 ```
 sudo apt install vlc
 
@@ -97,17 +103,17 @@ Run as root:
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
 
-#### How to null out outputs
+## How to null out outputs
 ```
 command &>/dev/null
 ```
 
-#### Clear all terminal history & reset
+## Clear all terminal history & reset
 ```
 cat /dev/null > ~/.bash_history && history -c && reset
 ```
 
-#### Vim commands
+## Vim commands
 ```
 Esc – switch to command mode
 :w – write out changes that were made
@@ -117,7 +123,7 @@ Esc – switch to command mode
 :x – save the changes made, and exits Vim
 ```
 
-#### Installing Waydroid
+## Installing Waydroid
 ```
 # if you're on debian run this
 export distro=bullseye
@@ -157,12 +163,12 @@ sudo rm /usr/bin/build_changelog
 sudo apt install waydroid -y
 ```
 
-#### Installing Tor Browser
+## Installing Tor Browser
 ```
 https://www.howtogeek.com/423866/how-to-install-and-use-the-tor-browser-on-linux/
 ```
 
-#### Install Tor Service + How to use
+## Install Tor Service + How to use
 ```
 sudo apt install tor
 
@@ -171,12 +177,12 @@ sudo systemctl start tor.service
 sudo systemctl stop tor.service
 ```
 
-#### Proxychains
+## Proxychains
 ```
 proxychains firefox duckduckgo.com
 ```
 
-#### Spoofing MAC Address
+## Spoofing MAC Address
 ```
 ifconfig wlan0 down
 
@@ -189,18 +195,18 @@ macchanger -s wlan0
 ifconfig wlan0 up
 ```
 
-#### Install Alfa card drivers:
+## Install Alfa card drivers:
 ```
 sudo apt install dkms && sudo apt install realtek-rtl88xxau-dkms && sudo reboot now
 sudo git clone https://github.com/aircrack-ng/rtl8812au && cd rtl8812au/ && make && sudo make install && sudo rm -rf rtl8812au
 ```
 
-#### Installing Wifite:
+## Installing Wifite:
 ```
 sudo git clone https://github.com/kimocoder/wifite2.git && sudo pip install pytest-flake8 && sudo apt install hcxdumptool && sudo apt install hcxtools && sudo apt-get install libpcap-dev && sudo apt-get install python2.7-dev libssl-dev zlib1g-dev libpcap-dev && sudo git clone https://github.com/JPaulMora/Pyrit.git && cd Pyrit && sudo python3 setup.py clean && sudo python3 setup.py build && sudo python3 setup.py install && sudo apt clean -y && sudo apt autoremove -y
 ```
 
-#### Awesome GitHub Tools:
+## Awesome GitHub Tools:
 ```
 git clone https://github.com/v1s1t0r1sh3r3/airgeddon
 git clone https://github.com/aircrack-ng/aircrack-ng
