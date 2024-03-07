@@ -33,7 +33,7 @@ sudo apt install librewolf -y
 
 ```
 sudo apt remove yt-dlp
-sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod +x yt-dlp
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod +x /usr/bin/yt-dlp
 ```
 
 </details>
