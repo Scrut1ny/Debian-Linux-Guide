@@ -1,47 +1,6 @@
-## YT-DLP (fix) - Linux Mint (Debian)
-```
-sudo apt remove yt-dlp
-sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod +x yt-dlp
-```
-
-## FFmpeg
-```
-sudo apt install ffmpeg
-```
-
-## Wordpress + XAMPP
-```
-# Download & Unzip Wordpress
-# https://wordpress.org/download/
-cd "$HOME/Downloads" && wget https://wordpress.org/latest.tar.gz && tar -xzvf "latest.tar.gz"
-sudo mv "$HOME/Downloads/wordpress" "/opt/lampp/htdocs"
-
-# Download & Install XAMPP
-# https://www.apachefriends.org/download.html
-# https://www.apachefriends.org/faq_linux.html
-chmod 755 xampp-linux-*-installer.run
-sudo ./xampp-linux-*-installer.run
-
-http://127.0.0.1/phpmyadmin/
-http://127.0.0.1/{wordpress folder name}
-```
-
-## ALFA AWUS036ACH Fix
-```
-sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms
-```
-
-## Full update, upgrade, dist-upgrade, autoremove, & clean
-```
-sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && apt clean -y
-```
-
-## Fixing Time / Timezone
-```
-sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
-```
-
 ## Install Librewolf (Debian Based)
+<details>
+<summary>Expand...</summary>
 ```
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
 
@@ -62,6 +21,82 @@ sudo apt update
 
 sudo apt install librewolf -y
 ```
+</details>
+
+
+
+## YT-DLP (fix) - Linux Mint (Debian)
+<details>
+<summary>Expand...</summary>
+```
+sudo apt remove yt-dlp
+sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod +x yt-dlp
+```
+</details>
+
+
+
+## FFmpeg
+<details>
+<summary>Expand...</summary>
+```
+sudo apt install ffmpeg
+```
+</details>
+
+
+
+## Wordpress + XAMPP
+<details>
+<summary>Expand...</summary>
+# Download & Unzip Wordpress
+# https://wordpress.org/download/
+```
+cd "$HOME/Downloads" && wget https://wordpress.org/latest.tar.gz && tar -xzvf "latest.tar.gz"
+sudo mv "$HOME/Downloads/wordpress" "/opt/lampp/htdocs"
+```
+# Download & Install XAMPP
+# https://www.apachefriends.org/download.html
+# https://www.apachefriends.org/faq_linux.html
+```
+chmod 755 xampp-linux-*-installer.run
+sudo ./xampp-linux-*-installer.run
+```
+http://127.0.0.1/phpmyadmin/
+http://127.0.0.1/{wordpress folder name}
+</details>
+
+
+
+## ALFA AWUS036ACH Fix
+<details>
+<summary>Expand...</summary>
+```
+sudo add-apt-repository ppa:kelebek333/kablosuz && sudo apt update && sudo apt install rtl8812au-dkms
+```
+</details>
+
+
+
+## Full update, upgrade, dist-upgrade, autoremove, & clean
+<details>
+<summary>Expand...</summary>
+```
+sudo apt update -y && apt full-upgrade -y && apt --with-new-pkgs upgrade -y && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && apt clean -y
+```
+</details>
+
+
+
+## Fixing Time / Timezone
+<details>
+<summary>Expand...</summary>
+```
+sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
+```
+</details>
+
+
 
 ## ohmyzsh
 ```
