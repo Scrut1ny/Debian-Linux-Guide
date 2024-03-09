@@ -115,6 +115,9 @@ sudo apt install ntpdate && ntpdate in.pool.ntp.org && dpkg-reconfigure tzdata
 </details>
 
 
+## Minecraft Server Tool (Crafty Controller)
+- [Linux Installation Guide](https://docs.craftycontrol.com/pages/getting-started/installation/linux/)
+
 
 ## ohmyzsh
 <details>
