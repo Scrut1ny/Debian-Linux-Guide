@@ -48,6 +48,8 @@ sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o
 sudo apt install ffmpeg
 ```
 
+- [Web UI](https://alfg.dev/ffmpeg-commander/)
+
 </details>
 
 
