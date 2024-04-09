@@ -45,9 +45,9 @@ sudo apt install ffmpeg
 ## Linux Mint Stuck at Boot Logo
 <details>
 <summary>Expand...</summary>
-
-- Step 1: Replace ` quiet splash ` with ` nouveau.modeset=0 `, then press `F10`.
-- Step 2: Go to Driver Manager and update GPU driver to recommended Nvidia driver.
+- Step 1: Hard reboot your device, and once Grub boot selector appears press `E`.
+- Step 2: Replace ` quiet splash ` with ` nouveau.modeset=0 `, then press `F10`.
+- Step 3: Go to Driver Manager and update GPU driver to recommended Nvidia driver.
 
 </details>
 
