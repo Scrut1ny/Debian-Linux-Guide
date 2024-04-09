@@ -46,8 +46,8 @@ sudo apt install ffmpeg
 <details>
 <summary>Expand...</summary>
 
-Step 1: Replace ` quiet splash ` with ` nouveau.modeset=0 `, then press `F10`.
-Step 2: Go to Driver Manager and update GPU driver to recommended Nvidia driver.
+- Step 1: Replace ` quiet splash ` with ` nouveau.modeset=0 `, then press `F10`.
+- Step 2: Go to Driver Manager and update GPU driver to recommended Nvidia driver.
 
 </details>
 
