@@ -34,17 +34,6 @@ sudo apt install librewolf -y
 ```
 sudo apt remove yt-dlp
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/bin/yt-dlp && sudo chmod +x /usr/bin/yt-dlp
-```
-
-</details>
-
-
-
-## FFmpeg
-<details>
-<summary>Expand...</summary>
-
-```
 sudo apt install ffmpeg
 ```
 
@@ -52,6 +41,15 @@ sudo apt install ffmpeg
 
 </details>
 
+
+## Linux Mint Stuck at Boot Logo
+<details>
+<summary>Expand...</summary>
+
+Step 1: Replace ` quiet splash ` with ` nouveau.modeset=0 `, then press `F10`.
+Step 2: Go to Driver Manager and update GPU driver to recommended Nvidia driver.
+
+</details>
 
 
 ## Wordpress + XAMPP
