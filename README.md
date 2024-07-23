@@ -23,6 +23,15 @@ sudo apt update
 sudo apt install librewolf -y
 ```
 
+#### File drag & drop is broken fix:
+
+- `about:config`
+```
+network.file.disable_unc_paths
+```
+= false
+
+
 </details>
 
 
